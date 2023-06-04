@@ -14,10 +14,9 @@ return require('packer').startup(function(use)
     }
 
     use {
-        "bluz71/vim-nightfly-colors",
-        as = "nightfly",
+        'AlexvZyl/nordic.nvim',
         config = function()
-            vim.cmd [[colorscheme nightfly]]
+            vim.cmd [[colorscheme nordic]]
         end
     }
 
@@ -30,7 +29,7 @@ return require('packer').startup(function(use)
         {                                      -- Optional
           'williamboman/mason.nvim',
           run = function()
-        pcall(vim.cmd, 'MasonUpdate')
+            pcall(vim.cmd, 'MasonUpdate')
           end,
         },
         {'williamboman/mason-lspconfig.nvim'}, -- Optional
@@ -51,4 +50,18 @@ return require('packer').startup(function(use)
         require("nvim-tree").setup {}
       end
     }
+
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
+
+    use "windwp/nvim-ts-autotag"
+
+    use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+
+    use 'arkav/lualine-lsp-progress'
 end)
