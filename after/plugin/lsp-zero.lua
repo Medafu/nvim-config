@@ -9,7 +9,6 @@ lsp.ensure_installed({
 	'tsserver',
     'cssls',
     'pyright',
-    'sqlls',
     'jsonls',
 	'eslint',
 	'rust_analyzer',
