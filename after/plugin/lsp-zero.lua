@@ -7,10 +7,16 @@ end)
 
 lsp.ensure_installed({
 	'tsserver',
+    'cssls',
+    'pyright',
+    'sqlls',
+    'jsonls',
 	'eslint',
 	'rust_analyzer',
-	'tailwindcss'
+	'tailwindcss',
 })
+
+lsp.setup()
 
 cmp.setup({
     mapping = {
@@ -19,5 +25,3 @@ cmp.setup({
         ['<S-Tab>'] = cmp.mapping.select_prev_item({}),
     }
 })
-
-lsp.setup()
