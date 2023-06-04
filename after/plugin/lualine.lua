@@ -1,6 +1,6 @@
 require 'lualine' .setup {
     options = {
-        theme = 'nordic',
+        theme = 'catppuccin',
         disabled_filetypes = { 'packer' }
     },
     sections = {

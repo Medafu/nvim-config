@@ -13,10 +13,11 @@ return require('packer').startup(function(use)
     run = ':TSUpdate'
     }
 
-    use {
-        'AlexvZyl/nordic.nvim',
+    use { 
+        "catppuccin/nvim",
+        as = "catppuccin",
         config = function()
-            vim.cmd [[colorscheme nordic]]
+            vim.cmd [[colorscheme catppuccin-mocha]]
         end
     }
 

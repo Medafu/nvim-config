@@ -16,8 +16,10 @@ require("nvim-tree").setup {
         highlight_git = true,
         icons = {
             show = {
-                git = false,
+                git = false
             }
         }
     }
 }
+
+print("asd")
