@@ -26,3 +26,5 @@ vim.opt.fillchars:append { eob = " " }
 vim.opt.rnu = true
 vim.opt.number = true
 vim.opt.cursorline = true
+
+vim.opt.shortmess = 'I'
