@@ -15,6 +15,8 @@ lsp.ensure_installed({
 	'tailwindcss',
 })
 
+vim.keymap.set('n', '<leader>f', vim.diagnostic.open_float)
+
 lsp.setup()
 
 cmp.setup({

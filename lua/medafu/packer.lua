@@ -69,4 +69,5 @@ return require('packer').startup(function(use)
     use 'nvim-tree/nvim-web-devicons' -- OPTIONAL: for file icons
     use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
     use 'romgrk/barbar.nvim'
+    use 'mattn/emmet-vim'
 end)
